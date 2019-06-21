@@ -1,0 +1,87 @@
+
+.Home {
+    position: fixed;
+    background-size: 50% 71%;
+    background-repeat: no-repeat;
+    height: 900px;
+    background-position: 100% 100%;
+    width: 98%;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.Layout{
+    width: 80%;
+    margin: auto;
+    height: 0;
+    background-color: #ffffff9f
+}
+.wrapper{
+    padding: 10px
+}
+.fadeIn{
+    animation: fading-in 0.5s ease-in 1 forwards;
+}
+
+.fadeOut{
+    animation: fading-out 0.5s ease-in 1;
+}
+
+.zoomIn{
+    animation: zoom-in 0.5s ease-in 1 forwards;
+}
+.zoomOut{
+    animation: zoom-out 0.5s ease-in 1 forwards;
+}
+
+@keyframes zoom-in{
+    from{
+        height: 0;
+        box-shadow: 0px 0px 2px 2px #ffffff00;
+    }
+    to{
+        height: 938px;
+        box-shadow: 0px 0px 2px 2px #00000063;
+    }
+}
+@keyframes zoom-out{
+    to{
+        height: 0;
+        box-shadow: 0px 0px 2px 2px #ffffff00;
+    }
+    from{
+        height: 938px;
+        box-shadow: 0px 0px 2px 2px #00000063;
+    }
+}
+@keyframes fading-out{
+    from{
+    -webkit-filter: blur(20px); /* Chrome, Opera */
+       -moz-filter: blur(20px);
+        -ms-filter: blur(20px);    
+            filter: blur(20px);
+    }
+    to{
+    -webkit-filter: blur(0px); /* Chrome, Opera */
+       -moz-filter: blur(0px);
+        -ms-filter: blur(0px);    
+            filter: blur(0px);
+    }
+}
+@keyframes fading-in{
+    from{
+    -webkit-filter: blur(0px); /* Chrome, Opera */
+       -moz-filter: blur(0px);
+        -ms-filter: blur(0px);    
+            filter: blur(0px);
+    }
+    to{
+    -webkit-filter: blur(20px); /* Chrome, Opera */
+       -moz-filter: blur(20px);
+        -ms-filter: blur(20px);    
+            filter: blur(20px);
+    }
+
+}
